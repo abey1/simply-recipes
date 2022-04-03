@@ -702,6 +702,42 @@ tag
 
 /*
 =============== 
+single-recipe
+===============
+*/
+.single-recipe-above {
+  display: grid;
+}
+.single-recipe-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.single-recipe-img-container img {
+  border-radius: var(--borderRadius);
+}
+
+.cook-time-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cook-time-container i {
+  color: var(--primary-500);
+  font-size: 1.5rem;
+}
+.cook-time {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .single-recipe-above {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*
+=============== 
 
 ===============
 */
